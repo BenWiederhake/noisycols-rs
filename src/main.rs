@@ -22,23 +22,23 @@ use rand_chacha::ChaCha8Rng;
 const WIDTH: u32 = 1920;
 const HEIGHT: u32 = 1080;
 const AREA_MARGIN: u32 = 180;
-const NUM_SOURCES: usize = 13;
+const NUM_SOURCES: usize = 14;
 const SAMPLENOISE_STDDEV: f32 = 40.0;
 const SAMPLE_MINDIST: f32 = 1e-10;
 // Should be between -inf and 0.  "closer to -inf" makes the colorful blobs "sharper".
 // Positive values make everything weird.
 const SAMPLE_DISTALPHA: f32 = -3.0; // -1.9
 const COLORSPACE_GAMMA: f32 = 1.8;
-const SEED_COLOR_SOURCES: u64 = 3;
+const SEED_COLOR_SOURCES: u64 = 4;
 const MAX_WEIGHT_COLOR_SOURCE: f32 = 1.5;
 const SEED_FUZZINESS: u64 = 1;
 
 const NUM_ARMS_WEIGHTS: [u32; 5] = [1, 2, 2, 1, 1];
 const ARM_FACTOR_WEIGHTS: [u8; 5] = [0, 4, 2, 1, 1];
-const ARM_RADIUS_MEAN: f32 = 130.0;
-const ARM_RADIUS_STDDEV: f32 = 160.0;
+const ARM_RADIUS_MEAN: f32 = 90.0;
+const ARM_RADIUS_STDDEV: f32 = 120.0;
 
-const NUM_FRAMES: usize = 120;
+const NUM_FRAMES: usize = 90;
 const NUM_THREADS: usize = 16;
 
 lazy_static! {

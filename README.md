@@ -42,6 +42,10 @@ The reason for the long ffmpeg incantation is:
 - `libx264`, `baseline`, `yuv240p`, `faststart`, and `.mp4` are necessary in order to support in-client video playback in Telegram, which is where I share these videos with friends.
 - `crf 22` means quite good quality. Note that due to the nature of the video, the blobs move but the milkglass distortion does not move. This is probably an unexpected video signal that should be destroyed by compression, although in my experience it is actually handled quite well.
 
+The result could look like this:
+
+[Video of pleasing, colorful blobs](making-of/video_1704325712.mp4)
+
 ## Tweaking
 
 Feel free to tweak the constants and experiment yourself! In the directory `making-of/` I put some (ugly) results that I got while choosing the right parameters.
